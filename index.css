@@ -11,6 +11,10 @@ header {
   font-family: 'Chivo Mono', monospace;
 }
 
+nav ul li a {
+  transition: all 0.5s;
+}
+
 header li a:hover {
   color: #5bbe42;
 }
@@ -62,8 +66,70 @@ section {
   text-align: center;
 }
 
-h1 {
+h1,
+div h2 {
   color:rgb(71, 216, 71);
 }
 
+.form-edit {
+  margin: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border: 2px solid #333;
+  background:black;
+  padding: 20px;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  padding: 05px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+form input {
+  padding: 10px;
+  outline: none;
+  border: 0;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+
+form input:focus {
+  border-radius: 16px;
+}
+
+form textarea {
+  padding: 7px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+form textarea:focus {
+  border-radius: 16px;
+}
+
+form button {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  color: #333;
+  transition: all 0.1s;
+  margin-bottom: 30px;
+  border: 2px solid;
+  color: white;
+}
+
+form button:hover {
+  color: #5bbe42;
+}
 
